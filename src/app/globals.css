@@ -163,12 +163,10 @@ nav {
 .brand-text {
   font-family: 'Cinzel', serif;
   color: var(--papyrus);
-  font-size: 1.05rem;
   font-weight: 700;
-  line-height: 1.1;
 }
 
-.brand-text span {
+.brand-text span:last-child {
   display: block;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 0.62rem;
