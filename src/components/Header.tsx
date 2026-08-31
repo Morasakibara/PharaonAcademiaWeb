@@ -25,8 +25,8 @@ export default function Header() {
             <Image
               src="/assets/logo.png"
               alt="Logo PharaonAcademia"
-              width={118}
-              height={118}
+              width={100}
+              height={100}
               className="brand-img"
               priority
             />

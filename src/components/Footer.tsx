@@ -10,8 +10,8 @@ export default function Footer() {
               <Image
                 src="/assets/logo.png"
                 alt="Logo PharaonAcademia"
-                width={106}
-                height={106}
+              width={90}
+              height={90}
                 className="foot-brand-img"
               />
               <span><span style={{ color: "var(--papyrus)" }}>Pharaon</span><span style={{ color: "var(--orange)" }}>Academia</span></span>
