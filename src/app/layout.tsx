@@ -2,23 +2,32 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "PharaonAcademia — Votre carrière créative commence ici",
+  title: {
+    default: "PharaonAcademia — Votre carrière créative commence ici",
+    template: "%s | PharaonAcademia",
+  },
   description:
-    "PharaonAcademia, centre de formation professionnelle à Yaoundé. DQP en 1 an : Infographie, Web Master, Photographie, Vidéographie. Rejoignez la 1ère promotion !",
+    "Centre de formation professionnelle à Yaoundé. DQP en 1 an : infographie, web, photo, vidéo, secrétariat et maintenance. Rejoignez la 1ère promotion !",
   keywords: [
     "formation professionnelle",
     "Yaoundé",
     "Cameroun",
     "infographie",
+    "design graphique",
     "web master",
     "photographie",
     "vidéographie",
+    "secrétariat bureautique",
+    "maintenance des systèmes d'impression",
     "DQP",
     "école numérique",
     "école créative",
     "PharaonAcademia",
     "formation informatique",
   ],
+  alternates: {
+    canonical: "/",
+  },
   authors: [{ name: "PharaonAcademia" }],
   creator: "PharaonAcademia",
   publisher: "PharaonAcademia",
@@ -30,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "PharaonAcademia",
     title: "PharaonAcademia — Votre carrière créative commence ici",
     description:
-      "Centre de formation professionnelle à Yaoundé. DQP en 1 an : Infographie, Web Master, Photographie, Vidéographie.",
+      "Centre de formation professionnelle à Yaoundé. DQP en 1 an dans 6 filières créatives, numériques et techniques.",
     images: [
       {
         url: "/og-image.png",
@@ -44,8 +53,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PharaonAcademia — Votre carrière créative commence ici",
     description:
-      "Centre de formation professionnelle à Yaoundé. DQP en 1 an : Infographie, Web Master, Photographie, Vidéographie.",
-    images: ["/assets/logo.png"],
+      "Centre de formation professionnelle à Yaoundé. DQP en 1 an dans 6 filières créatives, numériques et techniques.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -82,7 +91,7 @@ const structuredData = {
   "@type": "EducationalOrganization",
   name: "PharaonAcademia",
   description:
-    "Centre de formation professionnelle à Yaoundé. DQP en 1 an : Infographie, Web Master, Photographie, Vidéographie.",
+    "Centre de formation professionnelle à Yaoundé. DQP en 1 an : infographie, web master, photographie, vidéographie, secrétariat bureautique et maintenance des systèmes d'impression.",
   url: "https://pharaonacademia.com",
   logo: "https://pharaonacademia.com/assets/logo.png",
   address: {
@@ -134,6 +143,22 @@ const structuredData = {
           "@type": "EducationalOccupationalProgram",
           name: "Vidéographie",
           description: "Tournage, narration visuelle et montage",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "EducationalOccupationalProgram",
+          name: "Secrétariat bureautique",
+          description: "Gestion administrative, secrétariat et bureautique",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "EducationalOccupationalProgram",
+          name: "Maintenance des systèmes d'impression",
+          description: "Maintenance et réparation des systèmes d'impression",
         },
       },
     ],

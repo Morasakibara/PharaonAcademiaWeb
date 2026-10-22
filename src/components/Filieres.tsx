@@ -7,7 +7,7 @@ export default function Filieres() {
             <span className="dash"></span>Nos filières
             <span className="dash"></span>
           </div>
-          <h2>Quatre voies, un même niveau d&apos;exigence</h2>
+          <h2>Six voies, un même niveau d&apos;exigence</h2>
           <p>
             Diplôme Qualifiant Professionnel (DQP) — 1 an de formation
             intensive, alliant fondamentaux, outils professionnels et projets
@@ -39,7 +39,7 @@ export default function Filieres() {
               </svg>
             </div>
             <span className="fil-tag">DQP · 1 an</span>
-            <h3>Infographie</h3>
+            <h3>Infographie &amp; Design graphique</h3>
             <p>
               Identité visuelle, mise en page et création graphique, des
               fondamentaux à la maîtrise des outils professionnels.
@@ -94,7 +94,7 @@ export default function Filieres() {
               </svg>
             </div>
             <span className="fil-tag">DQP · 1 an</span>
-            <h3>Web Master</h3>
+            <h3>Web Master &amp; Création de Sites Web</h3>
             <p>
               Conception et développement de sites web et applications web : de la maquette à la
               mise en ligne, front-end et back-end.
@@ -140,7 +140,7 @@ export default function Filieres() {
               </svg>
             </div>
             <span className="fil-tag">DQP · 1 an</span>
-            <h3>Photographie</h3>
+            <h3>Photographie Professionnelle</h3>
             <p>
               Prise de vue, lumière et retouche professionnelle, du studio au
               reportage terrain.
@@ -183,7 +183,7 @@ export default function Filieres() {
               </svg>
             </div>
             <span className="fil-tag">DQP · 1 an</span>
-            <h3>Vidéographie</h3>
+            <h3>Vidéographie &amp; Montage audiovisuel</h3>
             <p>
               Tournage, narration visuelle et montage pour le web, la publicité
               et l&apos;évènementiel.
@@ -193,6 +193,82 @@ export default function Filieres() {
               <li>Prise de vue Aérienne &amp; avec drone</li>
               <li>Montage &amp; étalonnage (Premiere Pro)</li>
               <li>Motion design &amp; habillage</li>
+            </ul>
+            <div className="fil-meta">
+              <span>Présentiel</span>
+              <span>Yaoundé</span>
+            </div>
+          </div>
+
+          {/* Secretariat bureautique */}
+          <div className="fil-card">
+            <div className="fil-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="11"
+                  y="7"
+                  width="26"
+                  height="34"
+                  rx="2"
+                  stroke="#F0B429"
+                  strokeWidth="1.6"
+                />
+                <path
+                  d="M17 17 H31 M17 23 H31 M17 29 H25"
+                  stroke="#FBF6EC"
+                  strokeWidth="1.6"
+                />
+                <path d="M28 35 L35 28" stroke="#F1691D" strokeWidth="2" />
+              </svg>
+            </div>
+            <span className="fil-tag">DQP · 1 an</span>
+            <h3>Secrétariat bureautique</h3>
+            <p>
+              Gestion administrative, secrétariat et bureautique pour les entreprises.
+            </p>
+            <ul className="fil-list">
+              <li>Prise de notes et rédaction de documents</li>
+              <li>Organisation de réunions et gestion de l'agenda</li>
+              <li>Utilisation des logiciels de bureautique (Word, Excel, PowerPoint)</li>
+              <li>Communication et gestion des correspondances</li>
+            </ul>
+            <div className="fil-meta">
+              <span>Présentiel</span>
+              <span>Yaoundé</span>
+            </div>
+          </div>
+
+          {/* Maintenance des systemes d'impression */}
+          <div className="fil-card">
+            <div className="fil-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect
+                  x="8"
+                  y="18"
+                  width="32"
+                  height="18"
+                  rx="2"
+                  stroke="#F0B429"
+                  strokeWidth="1.6"
+                />
+                <path
+                  d="M14 18 V9 H34 V18 M14 30 H34 V40 H14 Z M18 34 H30"
+                  stroke="#FBF6EC"
+                  strokeWidth="1.6"
+                />
+                <circle cx="34" cy="24" r="1.5" fill="#F1691D" />
+              </svg>
+            </div>
+            <span className="fil-tag">DQP · 1 an</span>
+            <h3>Maintenance des systèmes d'impression</h3>
+            <p>
+              Maintenance et réparation des systèmes d'impression pour les entreprises.
+            </p>
+            <ul className="fil-list">
+              <li>Diagnostic et réparation de pannes</li>
+              <li>Entretien et maintenance préventive</li>
+              <li>Installation et configuration des systèmes d'impression</li>
+              <li>Support technique et résolution de problèmes</li>
             </ul>
             <div className="fil-meta">
               <span>Présentiel</span>

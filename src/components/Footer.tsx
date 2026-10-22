@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -18,7 +19,7 @@ export default function Footer() {
             </div>
             <p className="desc">
               Centre de formation professionnelle basé à Yaoundé. DQP en 1 an
-              dans les métiers créatifs et numériques.
+              dans les métiers créatifs, numériques et techniques.
             </p>
             <div className="socials socials-footer">
               <a href="#" aria-label="Facebook">
@@ -56,16 +57,16 @@ export default function Footer() {
             <h5>Navigation</h5>
             <ul>
               <li>
-                <a href="/about">À propos</a>
+                <Link href="/about">À propos</Link>
               </li>
               <li>
-                <a href="#filieres">Filières</a>
+                <Link href="/#filieres">Filières</Link>
               </li>
               <li>
-                <a href="#admission">Admission</a>
+                <Link href="/#admission">Admission</Link>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <Link href="/#contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -73,16 +74,24 @@ export default function Footer() {
             <h5>Filières</h5>
             <ul>
               <li>
-                <a href="#filieres">Infographie</a>
+                <Link href="/#filieres">Infographie</Link>
               </li>
               <li>
-                <a href="#filieres">Web Master</a>
+                <Link href="/#filieres">Web Master</Link>
               </li>
               <li>
-                <a href="#filieres">Photographie</a>
+                <Link href="/#filieres">Photographie</Link>
               </li>
               <li>
-                <a href="#filieres">Vidéographie</a>
+                <Link href="/#filieres">Vidéographie</Link>
+              </li>
+              <li>
+                <Link href="/#filieres">Secrétariat bureautique</Link>
+              </li>
+              <li>
+                <Link href="/#filieres">
+                  Maintenance des systèmes d&apos;impression
+                </Link>
               </li>
             </ul>
           </div>
@@ -97,9 +106,7 @@ export default function Footer() {
               <li>
                 <a href="tel:+237655061486">+237 655 06 14 86</a>
               </li>
-              <li>
-                <a href="#">Yaoundé-Chapelle Nsimeyong, Cameroun</a>
-              </li>
+              <li>Yaoundé-Chapelle Nsimeyong, Cameroun</li>
             </ul>
           </div>
         </div>

@@ -147,6 +147,10 @@ export default function Contact() {
               <option value="Web Master">Web Master</option>
               <option value="Photographie">Photographie</option>
               <option value="Vidéographie">Vidéographie</option>
+              <option value="Secrétariat bureautique">Secrétariat bureautique</option>
+              <option value="Maintenance des systèmes d'impression">
+                Maintenance des systèmes d&apos;impression
+              </option>
             </select>
           </div>
           <div className="field">

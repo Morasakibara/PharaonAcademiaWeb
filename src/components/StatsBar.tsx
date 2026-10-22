@@ -6,7 +6,7 @@ export default function StatsBar() {
       <div className="wrap">
         <div className="stat-item">
           <b>
-            <AnimatedCounter end={4} duration={1200} />
+            <AnimatedCounter end={6} duration={1200} />
           </b>
           <span>Filières professionnalisantes</span>
         </div>

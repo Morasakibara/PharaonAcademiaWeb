@@ -19,7 +19,7 @@ export default function Admission() {
               <h3>Dossier de candidature</h3>
               <p>
                 Renseignez le formulaire en ligne et déposez vos pièces
-                (identité, diplômes, photo).
+                (identité, photo et, le cas échéant, vos diplômes).
               </p>
             </div>
             <div className="step">

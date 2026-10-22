@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Quelles sont les conditions d'admission ?",
-    a: "Aucun diplôme préalable n'est exigé. Nous accueillons toute personne motivée, âgée de 18 ans et plus, avec un intérêt pour les métiers créatifs et numériques. Un entretien de motivation est réalisé pour valider l'orientation.",
+    a: "Aucun diplôme préalable n'est exigé. Nous accueillons toute personne motivée, âgée de 18 ans et plus, avec un intérêt pour les métiers créatifs, numériques et techniques. Un entretien de motivation est réalisé pour valider l'orientation.",
   },
   {
     q: "Combien coûte la formation ?",

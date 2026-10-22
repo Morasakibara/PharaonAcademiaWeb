@@ -3,10 +3,37 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 import type { Metadata } from "next";
 
+const aboutDescription =
+  "Découvrez l'histoire, les valeurs et l'équipe de PharaonAcademia, centre de formation professionnelle à Yaoundé.";
+
 export const metadata: Metadata = {
-  title: "À propos — PharaonAcademia",
-  description:
-    "Découvrez l'histoire, les valeurs et l'équipe de PharaonAcademia, centre de formation professionnelle à Yaoundé.",
+  title: "À propos",
+  description: aboutDescription,
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    type: "website",
+    locale: "fr_CM",
+    url: "https://pharaonacademia.com/about",
+    siteName: "PharaonAcademia",
+    title: "À propos — PharaonAcademia",
+    description: aboutDescription,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 630,
+        height: 630,
+        alt: "PharaonAcademia Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "À propos — PharaonAcademia",
+    description: aboutDescription,
+    images: ["/og-image.png"],
+  },
 };
 
 const values = [

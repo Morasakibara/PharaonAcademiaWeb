@@ -2,10 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  const sectionHref = (hash: string) => (isHome ? hash : `/${hash}`);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +25,7 @@ export default function Header() {
     <header className={scrolled ? "scrolled" : ""}>
       <div className="wrap">
         <nav>
-          <a href="#top" className="brand">
+          <a href={sectionHref("#top")} className="brand">
             <Image
               src="/assets/logo.png"
               alt="Logo PharaonAcademia"
@@ -42,31 +46,41 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="#filieres" onClick={closeMenu}>
+              <a href={sectionHref("#filieres")} onClick={closeMenu}>
                 Filières
               </a>
             </li>
             <li>
-              <a href="#admission" onClick={closeMenu}>
+              <a href={sectionHref("#admission")} onClick={closeMenu}>
                 Admission
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={closeMenu}>
+              <a href={sectionHref("#contact")} onClick={closeMenu}>
                 Contact
               </a>
             </li>
             <li>
-              <a href="#contact" className="btn btn-gold btn-compact" onClick={closeMenu}>
+              <a
+                href={sectionHref("#contact")}
+                className="btn btn-gold btn-compact"
+                onClick={closeMenu}
+              >
                 Candidater
               </a>
             </li>
           </ul>
-          <div className="burger" onClick={() => setOpen(!open)}>
+          <button
+            type="button"
+            className="burger"
+            aria-label="Ouvrir le menu de navigation"
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </button>
         </nav>
       </div>
     </header>

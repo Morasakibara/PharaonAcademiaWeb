@@ -65,7 +65,7 @@ export default function Hero() {
             </span>
           </div>
           <h1>
-            Bâtissez un métier créatif d&apos;un{" "}
+            Bâtissez un métier créatif digne d&apos;un{" "}
             <em>héritage pharaonique</em>
           </h1>
           <p className="lead">
@@ -84,7 +84,7 @@ export default function Hero() {
           </div>
           <div className="hero-stats">
             <div className="hstat">
-              <b>4</b>
+              <b>6</b>
               <span>Filières DQP</span>
             </div>
             <div className="hstat">
