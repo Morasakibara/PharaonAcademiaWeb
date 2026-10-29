@@ -9,13 +9,12 @@ export default function Footer() {
           <div>
             <div className="foot-brand">
               <Image
-                src="/assets/logo.png"
-                alt="Logo PharaonAcademia"
-              width={90}
-              height={90}
+                src="/assets/logo-header.png"
+                alt="PharaonAcademia — Centre de formation professionnelle"
+                width={216}
+                height={64}
                 className="foot-brand-img"
               />
-              <span><span style={{ color: "var(--papyrus)" }}>Pharaon</span><span style={{ color: "var(--orange)" }}>Academia</span></span>
             </div>
             <p className="desc">
               Centre de formation professionnelle basé à Yaoundé. DQP en 1 an

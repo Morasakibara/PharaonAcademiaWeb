@@ -127,10 +127,10 @@ header {
 }
 
 header.scrolled {
-  background: rgba(8, 27, 61, 0.92);
+  background: rgba(251, 246, 236, 0.94);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 30px -14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 30px -14px rgba(15, 43, 92, 0.35);
   padding: 12px 0;
 }
 
@@ -147,17 +147,23 @@ nav {
 }
 
 .brand-img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+  height: 52px;
+  width: auto;
   object-fit: contain;
-  border: 3px solid rgba(240, 180, 41, 0.5);
-  background: #FFFFFF;
+  background: #ffffff;
+  padding: 6px 12px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px -8px rgba(8, 27, 61, 0.45);
   transition: transform 0.3s ease;
 }
 
+header.scrolled .brand-img {
+  height: 46px;
+  box-shadow: none;
+}
+
 .brand-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .brand-text {
@@ -187,7 +193,16 @@ nav {
   font-size: 0.88rem;
   font-weight: 500;
   position: relative;
-  opacity: 0.88;
+  opacity: 0.92;
+  transition: color 0.35s ease, opacity 0.2s ease;
+  /* Contour / outline so white text stays readable over light areas */
+  text-shadow: 0 1px 2px rgba(8, 27, 61, 0.35);
+}
+
+/* When scrolled over white background: blue text, no shadow */
+header.scrolled .nav-links a {
+  color: var(--navy);
+  text-shadow: none;
 }
 
 .nav-links a:hover {
@@ -203,6 +218,10 @@ nav {
   height: 1px;
   background: var(--gold);
   transition: width 0.25s ease;
+}
+
+header.scrolled .nav-links a:not(.btn)::after {
+  background: var(--orange);
 }
 
 .nav-links a:not(.btn):hover::after {
@@ -226,6 +245,10 @@ nav {
   background: var(--papyrus);
   display: block;
   transition: 0.3s;
+}
+
+header.scrolled .burger span {
+  background: var(--navy);
 }
 
 /* ===== HERO ===== */
@@ -1125,6 +1148,17 @@ footer ul a:hover {
 
   .nav-links.open {
     transform: translateX(0);
+  }
+
+  /* On mobile the menu panel is always dark navy → keep text light */
+  .nav-links a,
+  header.scrolled .nav-links a {
+    color: var(--papyrus);
+    text-shadow: none;
+  }
+
+  header.scrolled .nav-links a:not(.btn)::after {
+    background: var(--gold);
   }
 
   .burger {

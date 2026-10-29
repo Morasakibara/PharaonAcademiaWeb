@@ -12,10 +12,16 @@ export default function Header() {
   const sectionHref = (hash: string) => (isHome ? hash : `/${hash}`);
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 30);
+        ticking = false;
+      });
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -27,17 +33,13 @@ export default function Header() {
         <nav>
           <a href={sectionHref("#top")} className="brand">
             <Image
-              src="/assets/logo.png"
-              alt="Logo PharaonAcademia"
-              width={100}
+              src="/assets/logo-header.png"
+              alt="PharaonAcademia — Centre de formation professionnelle"
+              width={340}
               height={100}
               className="brand-img"
               priority
             />
-            <span className="brand-text">
-              <span style={{ color: "var(--papyrus)" }}>Pharaon</span><span style={{ color: "var(--orange)" }}>Academia</span>
-              <span>Votre carrière créative commence ici</span>
-            </span>
           </a>
           <ul className={`nav-links ${open ? "open" : ""}`} id="navLinks">
             <li>
