@@ -989,17 +989,15 @@ footer {
 }
 
 .foot-brand-img {
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
+  height: 64px;
+  width: auto;
   object-fit: contain;
-  border: 3px solid rgba(240, 180, 41, 0.4);
-  background: #FFFFFF;
+  background: transparent;
   transition: transform 0.3s ease;
 }
 
 .foot-brand-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .foot-brand span {
